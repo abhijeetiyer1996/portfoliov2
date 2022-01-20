@@ -1,0 +1,115 @@
+.layout{
+    height: 100%;
+    padding: 10px;
+    background: #d05353;
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    width:95%;
+    height: 95%;  
+    margin: 0 auto;
+    align-items: center;
+    /* border-radius:2px; */
+    /* box-shadow: 4px 4px 1px 0px rgba(0,0,0,0.3); */
+}
+@media only screen and (min-width:30em){
+    .container{
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:60em){
+    .container{
+        flex-direction: row;
+        height: 70%;
+        width: 90%;
+    }
+}
+.content, .image{
+    padding-right: 10px;
+}
+.content{
+    width: 95%;
+    padding: 10px;
+    margin: 0 auto;
+}
+.image{
+    width:100%;
+    height: 50%;
+}
+.image> img{
+    display: block;
+    width: 95%;
+    padding:10px;
+}
+
+@media only screen and (min-width:60em){
+    .image>img{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+.text{
+    display: block;
+    text-align: justify;
+    font-family: var(--font1);
+    color: #fff;
+    width: 95%;
+    line-height: 1.3;
+    padding-left: 5px;
+    font-weight: bold;
+}
+@media only screen and (min-width:30em){
+    .text{
+        margin-top: 10px;
+        padding: 5px;
+    }
+}
+@media only screen and (min-width:60em){
+    .text{
+        margin-top: 50px;
+        padding: 10px;
+    }
+}
+.header{
+    font-size: 25px;
+    font-family: var(--font1);
+    text-transform: uppercase;
+    display: block;
+    width: 90%;
+    margin-top: 20px;
+}
+.title{
+    font-size: 20px;
+    display: block;
+}
+.highLight{
+    color:#111;
+    
+}
+.infoBtn{
+    display: block;
+    border: 1px solid rgba(0,0,0,0.5);
+    width: 25%;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: var(--bright-color);
+    color:#fff;
+    margin: 0 auto;
+    margin-left: 3px;
+    margin-top: 10px;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase; 
+    text-align: center;
+}
+.btnContainer{
+    width: 50%;
+    display: flex;
+}
+html{
+    scroll-behavior: smooth;
+}

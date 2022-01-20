@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+:root{
+    --bright-color: #374785;
+    --dark-color: #24315e;
+    --font1:'Titillium Web', sans-serif;
+    --shadow: 1px 1px 1px 0px rgba(0,0,0,0.3)
+}
+
+.container{
+    height: 100vh;
+    max-height: 120vh;
+    width: 100%;
+    background: var(--bright-color);
+    overflow-x: hidden;
+}
+.menuBtn{
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.4);
+    padding: 15px;
+    background: var(--dark-color);
+    color: #fff;
+    border-radius: 3px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    box-shadow: var(--shadow);
+    z-index: 999;
+}
+html{
+    scroll-behavior:smooth;
+}

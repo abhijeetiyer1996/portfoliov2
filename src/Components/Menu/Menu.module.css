@@ -1,0 +1,143 @@
+.menu{
+    z-index: 900;
+    box-shadow: var(--shadow);
+    height: 100vh;
+    width: 95%;
+    background-color:var(--bright-color);
+    overflow: hidden;
+    position: fixed;
+}
+@media only screen and (min-width:30em){
+    .menu{
+        width: 50%;
+    }
+}
+@media only screen and (min-width:60em){
+    .menu{
+        width: 30%;
+    }
+}
+.avatar{
+    width: 50%;
+    height: 35%;
+    text-align: center;
+    font-size: 40px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+@media only screen and (min-width:30em){
+    .avatar{
+        display: none;
+    }
+}
+@media only screen and (min-width:60em){
+    .avatar{
+        display: block;
+        margin-top:70px;
+        width: 70%;
+        height: 30%;
+    }
+}
+.avatar img{
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    background:#fff;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow:var(--shadow);                                                   
+}
+
+@media only screen and (min-width:60em){
+    .avatar img{
+        height: 150px;
+        width: 150px;
+        margin-top: 20px;
+    }
+}
+
+.nav{
+    width: 80%;
+    height: 30%;
+    margin-top: 10px;
+}
+@media only screen and (min-width:30em){
+    .nav{
+        width: 80%;
+        height: 40%;
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+}
+@media only screen and (min-width:60em){
+    .nav{
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+}
+
+.navItems{
+    display: flex;
+    width: 90%;
+    height: 20%;
+    border: 1px solid rgba(0,0,0,0.3);
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+@media only screen and (min-width:30em){
+    .navItems{
+        width: 80%;
+        padding: 5px;
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (min-width:60em){
+    .navItems{
+        height: 15%;
+        width: 90%;
+        margin-top: 10px;
+    }
+}
+.iconHolder, .textHolder{
+    height: 50%;
+    color:#fff;
+    padding: 10px;
+}
+@media only screen and (min-width:30em){
+    .iconHolder, .textHolder{
+        padding:5px;
+    }
+}
+.iconHolder{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 20%;
+    border:1px solid rgba(0,0,0,0.4);
+    border-radius: 3px;
+    text-align:center;
+    background: var(--dark-color);
+}
+@media only screen and (min-width:30em){
+    .iconHolder{
+        height: 60%;
+        margin-top:2px
+    }
+}
+.textHolder{
+    width: 60%;
+    font-size: 18px;
+    font-family: var(--font1);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+@media only screen and (min-width:30em){
+    .textHolder{
+        font-size: 15px;
+    }
+}
+.link{
+    display: flex;
+    align-items:center;
+    text-decoration: none;
+}

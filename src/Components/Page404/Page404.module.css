@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    align-items: center;
+    height: 70%;
+    width: 70%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    /* border: 1px solid #000; */
+}
+.imageHolder{
+    height: 60%;
+    /* bordeR: 1px solid #000; */
+    margin: 0 auto;
+}
+.textHolder{
+    margin: 0 auto;
+    width: 70%;
+    font-family: var(--font1);
+    color: #fff;
+}
+.image{
+    height: 100%;
+}

@@ -1,0 +1,6 @@
+.cardContainer{
+    display: flex;
+    width: 60%;
+    height: 30%;
+    border: 1px solid #000;
+}
