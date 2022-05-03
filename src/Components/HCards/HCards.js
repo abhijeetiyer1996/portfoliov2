@@ -4,7 +4,7 @@ import {VscGithubInverted, VscWindow} from 'react-icons/vsc';
 const Projects = (props) =>{
     return (<div className={classes.cardContainer}>
                 <div className={classes.image}>
-                    <img  className={classes.thumbnail} src={props.image} /> 
+                    <img alt="thumbnail" className={classes.thumbnail} src={props.image} /> 
                 </div>
                 <div className={classes.content}>
                     <div className={classes.header}>{props.header}</div>
