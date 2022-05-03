@@ -1,0 +1,41 @@
+.badge{
+    border: 1px solid rgba(0,0,0,0.5);
+    background: var(--bright-color);
+    border-radius: 3px;
+    color:#fff;
+    display: flex;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+    margin: 5px;
+    transition: all 0.2s linear;
+    font-family:var(--font2)
+}
+.badge:hover{
+    color:#000;
+    box-shadow: none;
+    background: #fff;
+    transition: all 0.2s linear;
+}
+.badgeText,.badgeIcon{
+    display:block;
+    /* height: 100%; */
+    padding: 10px;
+    text-align: center;
+    /* border: 1px solid #000; */
+}
+.badgeIcon{
+    width: 30%;
+    /* border-right: 1px solid rgba(0,0,0,0.5); */
+    font-size: 20px;
+}
+
+.badgeText{
+    display: none;
+    font-size: 23px;
+}
+@media only screen and (min-width: 60em){
+    .badgeText{
+        display: block;
+        border-left: 1px solid rgba(0,0,0,0.5);
+
+    }
+}

@@ -1,4 +1,103 @@
 .cLayout{
+    height: auto;
+    background: #d05353;
+    border: 1px solid #d05353;
+
+}
+@media only screen and (min-width: 60em) {
+    .cLayout{
+        height: 100%;
+    }
+}
+.container{
+    width: 90%;
+    margin:0 auto;
+    margin-top: 50px;
+    height: 90%;
+}
+.content, .thumbnail{
+    width: 100%;
     height: 100%;
-    background: #111;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+@media only screen and (min-width: 60em) {
+    .content{
+        flex-direction: row;
+    }
+}
+
+.thumbnail{
+ display: none;   
+}
+
+.btn{
+    display: inline-block;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    padding: 10px 20px;
+    background-color: var(--bright-color);
+    /* width: 15%; */
+    color:#fff;
+    margin: 0 auto;
+    margin-left: 3px;
+    margin-top: 30px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s linear;
+    font-size: 20px;
+    font-family: var(--font1);
+    box-shadow: 5px 5px 1px rgba(0,0,0,0.3)
+}
+.btn:hover{
+    background:#fff;
+    color:#000;
+    box-shadow:none;
+    border: 1px solid rgba(0,0,0,0.6);
+    transition: all 0.2s linear;
+    
+}
+
+.panel{
+    height: 90%;
+    margin: 0 auto;
+    width: 90%;
+    height: 70%;
+    margin-top: 20px;
+    text-align:center;
+    transition: 0.2s all linear;                                                 
+    padding: 30px;
+}
+.panel:nth-child(2){
+    border-left: 1px solid rgba(0,0,0,0.3);
+    border-right: 1px solid rgba(0,0,0,0.3);
+
+}
+@media only screen and (min-width: 60em){
+    .panel{
+        width: 25%;
+    }
+}
+
+.panel> img{
+    height: 60%;
+    display: block;
+    margin: 0 auto;
+}
+.info{
+    padding: 20px;
+    color:#fff;
+}
+.sm{
+    display: flex;
+    width: 55%;
+    margin: 0 auto;
+}
+.header{
+    font-family: var(--font2);
+    font-size:40px;
+    text-align: center;
+    color:#fff;
 }

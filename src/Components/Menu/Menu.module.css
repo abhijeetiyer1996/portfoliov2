@@ -1,11 +1,13 @@
 .menu{
     z-index: 900;
-    box-shadow: var(--shadow);
+    box-shadow: 2px 0px 0px rgba(0,0,0,0.4);
     height: 100vh;
     width: 95%;
     background-color:var(--bright-color);
     overflow: hidden;
     position: fixed;
+    border-right: 1px solid rgba(0,0,0,0.2);
+    transition: all 0.2s linear;
 }
 @media only screen and (min-width:30em){
     .menu{
@@ -24,6 +26,7 @@
     font-size: 40px;
     margin: 0 auto;
     margin-top: 30px;
+    
 }
 @media only screen and (min-width:30em){
     .avatar{
@@ -44,7 +47,7 @@
     border-radius: 150px;
     background:#fff;
     border: 1px solid rgba(0,0,0,0.3);
-    box-shadow:var(--shadow);                                                   
+    box-shadow: 5px 5px 0px  rgba(0,0,0,0.3);                                                   
 }
 
 @media only screen and (min-width:60em){
@@ -57,21 +60,34 @@
 
 .nav{
     width: 80%;
-    height: 30%;
-    margin-top: 10px;
+    height: 90%;
+    margin-top: 50px;                                                
 }
 @media only screen and (min-width:30em){
     .nav{
         width: 80%;
-        height: 40%;
+        height: 90%;
         margin: 0 auto;
-        margin-top: 70px;
+        margin-top: 50px;     
+        border: none;
+        box-shadow: none; 
+        border-radius: 3px;
+        transition: all 0.2s linear;
     }
+    /* .nav:hover{
+        box-shadow: none;
+        transition: all 0.2s linear;
+        box-shadow: 3px 3px 0px  rgba(0,0,0,0.3);
+
+    } */
 }
 @media only screen and (min-width:60em){
     .nav{
         margin: 0 auto;
-        margin-top: 70px;
+        margin-top: 50px;
+        justify-content: center;
+        border: 1px solid rgba(0,0,0,0.3);
+        /* box-shadow: 3px 3px 0px  rgba(0,0,0,0.3); */
     }
 }
 
@@ -79,16 +95,29 @@
     display: flex;
     width: 90%;
     height: 20%;
-    border: 1px solid rgba(0,0,0,0.3);
-    padding: 5px;
+    border: 1.5px solid rgba(0,0,0,0.3);
+    padding: 5px 10px;
     border-radius: 3px;
     margin-top: 10px;
+    /* box-shadow: 5px 5px 0px  rgba(0,0,0,0.3); */
+    transition: all 0.2s linear;
 }
+.navItems:hover{
+    color: #000;
+    box-shadow: none;
+    transition: all 0.2s linear;
+    box-shadow: 3px 3px 0px  rgba(0,0,0,0.3);
+    
+}
+
 @media only screen and (min-width:30em){
     .navItems{
         width: 80%;
         padding: 5px;
         margin-top: 5px;
+    }
+    .nav-items:first-child{
+        margin-top: 30px;
     }
 }
 
@@ -124,6 +153,13 @@
         margin-top:2px
     }
 }
+@media only screen and (min-width:60em){
+    .iconHolder{
+        height: 70%;
+        padding:10px 5px;
+        /* margin-top:2px */
+    }
+}
 .textHolder{
     width: 60%;
     font-size: 18px;
@@ -133,11 +169,12 @@
 }
 @media only screen and (min-width:30em){
     .textHolder{
-        font-size: 15px;
+        font-size: 20px;
     }
 }
 .link{
     display: flex;
     align-items:center;
     text-decoration: none;
+    color:#fff;
 }

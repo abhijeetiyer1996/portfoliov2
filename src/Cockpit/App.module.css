@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap');
 :root{
     --bright-color: #374785;
     --dark-color: #24315e;
-    --font1:'Titillium Web', sans-serif;
-    --shadow: 1px 1px 1px 0px rgba(0,0,0,0.3)
+    --font1:'Abel', sans-serif;
+    --font2: 'Bebas Neue', cursive;
+    --shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
 .container{
@@ -17,15 +18,19 @@
     outline: none;
     border: 1px solid rgba(0,0,0,0.4);
     padding: 15px;
-    background: var(--dark-color);
+    background: var(--bright-color);
     color: #fff;
     border-radius: 3px;
     position: fixed;
     top: 10px;
     left: 10px;
-    box-shadow: var(--shadow);
+    box-shadow: 5px 5px 0px  rgba(0,0,0,0.3);                                                   
     z-index: 999;
+    transition: all 0.2s linear;
 }
-html{
-    scroll-behavior:smooth;
+.menuBtn:hover{
+    box-shadow: none;                                                   
+    background: #fff;
+    border: 1px solid #000;
+    color:var(--bright-color)
 }

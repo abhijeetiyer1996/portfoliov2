@@ -6,7 +6,7 @@ import Projects from  '../Components/Projects/Projects';
 import Menu from  '../Components/Menu/Menu';
 import Page404 from  '../Components/Page404/Page404';
 import {VscNote,VscChromeClose} from "react-icons/vsc";
-import {useState, useEffect} from "react";
+import {useState} from "react";
 import {Routes, Route} from "react-router-dom";
 
 

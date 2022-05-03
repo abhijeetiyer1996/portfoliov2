@@ -2,10 +2,9 @@ import classes from './About.module.css';
 import {useState} from "react";
 import codingBro from "../../Assets/Coding-bro.svg";
 import landingPage from "../../Assets/landingPage.svg";
-import programmingBro from "../../Assets/Programming-bro.svg";
-
-
-
+import profileBro from "../../Assets/Resume-bro.svg";
+import Badges from "../Badges/Badges";
+import {SiJavascript,SiHtml5,SiCss3,SiNodedotjs,SiReact} from "react-icons/si";
 
 const About = () =>{
     const [activeTab, setActiveTab] = useState(1);
@@ -26,16 +25,16 @@ const About = () =>{
                             </div>
                             <div className={classes.content}>
                                 <span>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    <h1 className={classes.header}>Education</h1>
+                                     I did my graduation in B.E Information Technology, Passionate to become a full stack developer and aiming to achieve specification in Devops Engineering. 
                                 </span> 
                             </div>
                         </div>
                         <div className={activeTab === 2? `${classes.activeContent}`:`${classes.tabItem}`}>
                             <div className={classes.content}>
                                 <span>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    <h1 className={classes.header}>Experience</h1>
+                                    I have 3 years of experience in total, Starting a new job as a fullstack developer. I also love to work with JS and different frameworks like React (which I am currently learning).
                                 </span>
                             </div>
                             <div className={classes.image}>
@@ -44,11 +43,19 @@ const About = () =>{
                         </div>
                         <div className={activeTab === 3? `${classes.activeContent}`:`${classes.tabItem}`}>
                             <div className={classes.image}>
-                                <img src={programmingBro} alt="tab3Image"/>
+                                <img src={profileBro} alt="tab3Image"/>
                             </div>
                             <div className={classes.content}>
-                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                <span>
+                                    <h1 className={classes.header}>Profile </h1>
+                                    Currently working with these technologies
+                                    <div className={classes.badgeContainer}>
+                                        <Badges icon={<SiHtml5/>} text="HTML5"/>
+                                        <Badges icon={<SiCss3/>} text="Css3"/>
+                                        <Badges icon={<SiJavascript/>} text="JavaScript"/>
+                                        <Badges icon={<SiNodedotjs/>} text="Node.js"/>
+                                        <Badges icon={<SiReact/>} text="React.js"/>
+                                    </div>
                                 </span>
                             </div>
                         </div>

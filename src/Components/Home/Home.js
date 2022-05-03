@@ -12,12 +12,12 @@ const Home = () =>{
                     </div>
                     <div className={classes.content}>
                         <span className={classes.text}>
-                           <span className={classes.header}>Hello! I am <span className={classes.highLight}>Abhijeet</span></span>
+                           <span className={classes.header}><u>Hello! I am <span className={classes.highLight}>Abhijeet</span></u></span>
                            <span className={classes.title}>An Engineer learning Full Stack development. Welcome to my <span className={classes.highLight}>Portfolio</span></span>
                         </span> 
                         <div className={classes.btnContainer}>
-                            <a className={classes.infoBtn}><VscSymbolKeyword size={20}/></a>
-                            <a className={classes.infoBtn}><FiLinkedin size={20}/></a>
+                            <a href="https://drive.google.com/file/d/1mm45wR2RpCpSKxphIjqWhWXoGtyPhS29/view?usp=sharing" className={classes.infoBtn}><VscSymbolKeyword size={20}/></a>
+                            <a href="https://www.linkedin.com/in/abhijeet-iyer-8613a3158/" className={classes.infoBtn}><FiLinkedin size={20}/></a>
                             <Link to="/Projects" className={classes.infoBtn}><VscFolderLibrary size={20}/></Link>
                         </div>
                          
