@@ -8,7 +8,7 @@ const Home = () =>{
     return (<div className={classes.layout}>
                 <div className={classes.container}>
                     <div className={classes.image}>
-                        <img alt="landing Image" src={landingImage} />
+                        <img  src={landingImage} />
                     </div>
                     <div className={classes.content}>
                         <span className={classes.text}>
