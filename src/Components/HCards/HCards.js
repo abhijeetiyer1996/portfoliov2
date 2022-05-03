@@ -11,7 +11,7 @@ const Projects = (props) =>{
                     <div className={classes.desc}>
                         {props.desc}
                     </div>
-                    <a href={props.repoLink} target="_blank" className={classes.btn}><VscGithubInverted/></a>
+                    <a href={props.repoLink} className={classes.btn}><VscGithubInverted/></a>
                     {
                         (props.liveSite) ? <a href={props.liveSite} className={classes.btn}><VscWindow/></a>:null
                     }
